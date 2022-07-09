@@ -1,0 +1,111 @@
+:root {
+    --background-dark: #141628;
+    --background-blue: hsl(232, 30%, 15%);
+    --buttons-pink: #fd4370;
+    --font-white: #f3f3f4;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color:  #141628;
+    position: relative;
+}
+
+.header-menu--dropdown {
+    display: none;
+    flex-direction: column;
+    background-color:hsl(234deg 30% 10% / 98%);
+    width: 20rem;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 0rem;
+    left: 0rem;
+}
+.header-menu--dropdown a {
+    text-decoration: none;
+    color: var(--buttons-pink);
+    font-size: 2rem;
+}
+.header-button--dropdown {
+    font-size: 5rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    color: var(--font-white);
+}
+.header-logo {
+    width: 2rem;
+    margin-left: 3rem;
+}
+
+main {
+    width: 100%;
+    min-height: 40rem;
+    background-color: var(--background-dark);
+    display: flex;
+    flex-direction: column;
+    
+}
+main img {
+    width: 30rem;
+    height: 20rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main-picture--profile,
+main h1 {
+    margin-top: 1.2rem;
+    align-self: center;
+}
+main h1 {
+    font-size: 2.5rem;
+    color: var(--font-white);
+}
+.main-picture--profile {
+    margin-bottom: 1rem;
+    width: 380px;
+    height: 380px;
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 100%;
+}
+.about-section {
+    background-color: var(--background-blue);
+    width: 100%;
+    min-height: 50rem;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+.about-section h2,
+.about-section p {
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+    color: var(--font-white);
+} 
+.about-section h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+.about-section p {
+    margin-top: 4rem;
+}
+
+
+
